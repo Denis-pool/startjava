@@ -116,5 +116,78 @@ public class VariableNamesTheme {
         // Количество чисел в каждой строке
         int sumNumbersInEachRow = 51;
         System.out.println("\nКоличество чисел в каждой строке " + sumNumbersInEachRow);
+
+
+        System.out.println("\n2.Boolean-переменные");
+
+        // На текущем этапе несовсем разобрался как выводить boolean значения, поэтому решил сделать через if
+
+        //Сотни равны? 
+        boolean isHundredsEqual = true;
+        if (isHundredsEqual) System.out.println("\nСотни равны");
+
+        // Компьютер включен? 
+        boolean isPCOn = true;
+        if (isPCOn) System.out.println("\nКомпьютер не включен");
+
+        // Есть разные цифры? 
+        boolean hasDifferentNumbers = false;
+        if (!hasDifferentNumbers) System.out.println("\nЦифры одинаковые");
+
+        // Создано
+        boolean isCreatedFile = false;
+        if (!isCreatedFile) System.out.println("\nФайл не создан");
+
+        // Пустое?
+        boolean isEmptySpace = true;
+        if (isEmptySpace) System.out.println("\nПространство пустое");
+
+        // Активное? 
+        boolean isActiveCell = true;
+        if (isActiveCell) System.out.println("\nЯчейка активная");
+
+        // Новое? 
+        boolean isNewValue = true;
+        if (isNewValue) System.out.println("\nСодержит новое значение");
+
+        // Электронная почта действительна? 
+        boolean isValidEmail = true;
+        if (isValidEmail) System.out.println("\nЭлектронная почта активна");
+
+        // Имеются уникальные строки?
+        boolean isUniqueStrings = true;
+        if (isUniqueStrings) System.out.println("\nИмеются уникальные строки");
+
+        System.out.println("\n3.Аббревиатуры");
+
+        // Точно не уверен, но, мне кажется, в аббревиатурах вид - RAMmaker лучше, чем RAMMaker или makerRAM
+
+        // Старый universally unique identifier
+        String UUIDold = "123e4567-e89b-12d3-a456-426655440000";
+        System.out.println("\nСтарый UUID = " + UUIDold);
+
+        // Производитель оперативной памяти
+        String RAMmaker = "Samsung";
+        System.out.println("\nПроизводитель оперативной памяти - " + RAMmaker);
+
+        // Емкость жесткого диска
+        int HDDsize = 512;
+        System.out.println("\nЕмкость жесткого диска UUID = " + HDDsize);
+
+        // Протокол передачи гипертекста
+        String HTTPtype = "HTTPS";
+        System.out.println("\nПротокол передачи гипертекста - " + HTTPtype);
+
+        // Сокращенный uniform resource locator
+        String URLshort = "https://javaops.ru";
+        System.out.println("\nСокращенный URL - " + URLshort);
+
+        // Новый идентификатор клиента
+        int newClientID = 11224;
+        System.out.println("\nНовый идентификатор клиента - " + newClientID);
+
+        // American standard code for information interchange
+        int ASCII = 128;
+        System.out.println("\nASCII = " + ASCII);
     }
 }
