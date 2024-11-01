@@ -1,7 +1,6 @@
 public class VariableNamesTheme {
 
     public static void main(String[] args) {
-
         System.out.println("\n1.Разные переменные");
 
         // Цифра
@@ -14,16 +13,16 @@ public class VariableNamesTheme {
         System.out.println("\nСумма чисел " + num + " и " + num2 + " = " + sum);
         
         // Произведение чисел
-        int result = num * num2;
-        System.out.println("\nПроизведение чисел " + num + " и " + num2 + " = " + result);
+        int product = num * num2;
+        System.out.println("\nПроизведение чисел " + num + " и " + num2 + " = " + product);
 
         // Максимальное число 
         int maxNum = 52;
         System.out.println("\nМаксимальное число - " + maxNum);
 
         // Количество десятков
-        int countTen = 5;
-        System.out.println("\nКоличество десятков = " + countTen);
+        int countTens = 5;
+        System.out.println("\nКоличество десятков = " + countTens);
 
         // Вес собаки
         int weightDog = 35;
@@ -34,12 +33,12 @@ public class VariableNamesTheme {
         System.out.println("\nИсходное число - " + originalNum);
 
         // Процент по вкладу
-        int percentDep = 15;
-        System.out.println("\nПроцент по вкладу = " + percentDep);
+        int interestRate = 15;
+        System.out.println("\nПроцент по вкладу = " + interestRate);
 
         // Переменная хранит символ &
-        char haveAmpersand = '&';
-        System.out.println("\nПеременная хранит символ " + haveAmpersand);
+        char ampersand = '&';
+        System.out.println("\nПеременная хранит символ " + ampersand);
 
         // Код ошибки
         int errorCode = 502;
@@ -50,8 +49,8 @@ public class VariableNamesTheme {
         System.out.println("\nТип текущего сообщения - " + messageType);
 
         // Число нулей
-        int countZero = 3;
-        System.out.println("\nЧисло нулей в числе 1000 = " + countZero);
+        int countZeros = 3;
+        System.out.println("\nЧисло нулей в числе 1000 = " + countZeros);
 
         // Уникальное число
         int uniqueNum = 52;
@@ -62,8 +61,8 @@ public class VariableNamesTheme {
         System.out.println("\nСлучайное число = " + randomNum);
 
         // Математическое выражение
-        String mathFormula = " x + y = c";
-        System.out.println("\nМатематическое выражение " + mathFormula);
+        String mathExpression = " x + y = c";
+        System.out.println("\nМатематическое выражение " + mathExpression);
 
         // Счет в игре
         String gameScore = "6:2";
@@ -74,8 +73,8 @@ public class VariableNamesTheme {
         System.out.println("\nМаксимальная длина " + maxLenght);
 
         // Пункт меню
-        int menuPoint = 7;
-        System.out.println("\nПункт меню - " + menuPoint);
+        int menuItem = 7;
+        System.out.println("\nПункт меню - " + menuItem);
 
         // Стоимость кофе
         int coffeeCost = 320;
@@ -94,8 +93,8 @@ public class VariableNamesTheme {
         System.out.println("\nПолное имя работника месяца " + fullNameBestWorkerInMonth);
 
         // Заголовок электронной книги
-        String eBookTitle = "Never Give Up";
-        System.out.println("\nЗаголовок электронной книги " + eBookTitle);
+        String ebookTitle = "Never Give Up";
+        System.out.println("\nЗаголовок электронной книги " + ebookTitle);
 
         // Размер
         int size = 52;
@@ -114,80 +113,77 @@ public class VariableNamesTheme {
         System.out.println("\nПуть до файла " + filePath);
 
         // Количество чисел в каждой строке
-        int sumNumbersInEachRow = 51;
-        System.out.println("\nКоличество чисел в каждой строке " + sumNumbersInEachRow);
+        int countNumbersPerRow = 51;
+        System.out.println("\nКоличество чисел в каждой строке " + countNumbersPerRow);
 
 
         System.out.println("\n2.Boolean-переменные");
 
-        // На текущем этапе несовсем разобрался как выводить boolean значения, поэтому решил сделать через if
-
         //Сотни равны? 
         boolean isHundredsEqual = true;
-        if (isHundredsEqual) System.out.println("\nСотни равны");
+        System.out.println("\nСотни равны - " + isHundredsEqual);
 
         // Компьютер включен? 
-        boolean isPCOn = true;
-        if (isPCOn) System.out.println("\nКомпьютер не включен");
+        boolean isPcOn = true;
+        System.out.println("\nКомпьютер не включен - " + isPcOn);
 
         // Есть разные цифры? 
         boolean hasDifferentNumbers = false;
-        if (!hasDifferentNumbers) System.out.println("\nЦифры одинаковые");
+        System.out.println("\nЦифры разные - " + hasDifferentNumbers);
 
         // Создано
         boolean isCreatedFile = false;
-        if (!isCreatedFile) System.out.println("\nФайл не создан");
+        System.out.println("\nФайл создан - " + isCreatedFile);
 
         // Пустое?
         boolean isEmptySpace = true;
-        if (isEmptySpace) System.out.println("\nПространство пустое");
+        System.out.println("\nПространство пустое - " + isEmptySpace);
 
         // Активное? 
         boolean isActiveCell = true;
-        if (isActiveCell) System.out.println("\nЯчейка активная");
+        System.out.println("\nЯчейка активная - " + isActiveCell);
 
         // Новое? 
         boolean isNewValue = true;
-        if (isNewValue) System.out.println("\nСодержит новое значение");
+        System.out.println("\nСодержит новое значение - " + isNewValue);
 
         // Электронная почта действительна? 
         boolean isValidEmail = true;
-        if (isValidEmail) System.out.println("\nЭлектронная почта активна");
+        System.out.println("\nЭлектронная почта активна - " + isValidEmail);
 
         // Имеются уникальные строки?
-        boolean isUniqueStrings = true;
-        if (isUniqueStrings) System.out.println("\nИмеются уникальные строки");
+        boolean hasUniqueStrings = true;
+        System.out.println("\nИмеются уникальные строки - " + hasUniqueStrings);
+
 
         System.out.println("\n3.Аббревиатуры");
 
-        // Точно не уверен, но, мне кажется, в аббревиатурах вид - RAMmaker лучше, чем RAMMaker или makerRAM
-
         // Старый universally unique identifier
-        String UUIDold = "123e4567-e89b-12d3-a456-426655440000";
-        System.out.println("\nСтарый UUID = " + UUIDold);
+        String uuidOld = "123e4567-e89b-12d3-a456-426655440000";
+        System.out.println("\nСтарый UUID = " + uuidOld);
 
         // Производитель оперативной памяти
-        String RAMmaker = "Samsung";
-        System.out.println("\nПроизводитель оперативной памяти - " + RAMmaker);
+        String ramMaker = "Samsung";
+        System.out.println("\nПроизводитель оперативной памяти - " + ramMaker);
 
         // Емкость жесткого диска
-        int HDDsize = 512;
-        System.out.println("\nЕмкость жесткого диска UUID = " + HDDsize);
+        int hddSize = 512;
+        System.out.println("\nЕмкость жесткого диска UUID = " + hddSize);
 
         // Протокол передачи гипертекста
-        String HTTPtype = "HTTPS";
-        System.out.println("\nПротокол передачи гипертекста - " + HTTPtype);
+        String httpType = "HTTPS";
+        System.out.println("\nПротокол передачи гипертекста - " + httpType);
 
         // Сокращенный uniform resource locator
-        String URLshort = "https://javaops.ru";
-        System.out.println("\nСокращенный URL - " + URLshort);
+        String urlShot = "https://javaops.ru";
+        System.out.println("\nСокращенный URL - " + urlShot);
 
         // Новый идентификатор клиента
-        int newClientID = 11224;
-        System.out.println("\nНовый идентификатор клиента - " + newClientID);
+        int newClientId = 11224;
+        System.out.println("\nНовый идентификатор клиента - " + newClientId);
 
         // American standard code for information interchange
-        int ASCII = 128;
-        System.out.println("\nASCII = " + ASCII);
+        int ascii = 128;
+        System.out.println("\nASCII = " + ascii);
     }
 }
