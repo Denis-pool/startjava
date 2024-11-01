@@ -1,28 +1,27 @@
 public class VariablesTheme {
 
     public static void main(String[] args) {
-        
         System.out.println("\n1.Вывод характеристик компьютера");
 
         // boolean, byte, short, int, long, float, double, char,
 
-        byte CPUcores = 8;
-        boolean isPCon = true;
-        short CPUlogiсCores = 16;
-        int HDDsize = 1024;
-        long GPUsize = 8L;
-        float CPUspeed = 3.20F;
-        double RAMsize = 16;
-        char nameMainHDD = 'C';
+        byte cpuCores = 8;
+        boolean isPcOn = true;
+        short cpuLogiсCores = 16;
+        int hddSize = 1024;
+        long gpuSize = 8L;
+        float cpuSpeed = 3.20F;
+        double ramSize = 16;
+        char nameMainHdd = 'C';
 
-        System.out.println("\nКоличество ядер процессора - " + CPUcores);
-        System.out.println("Количество логических процессоров - " + CPUlogiсCores);
-        System.out.println("Скорость процессора - " + CPUspeed + " ГГц");
-        System.out.println("Размер оперативной памяти - " + RAMsize + " ГБ");
-        System.out.println("Размер памяти видеокарты - " + GPUsize + " ГБ");
-        System.out.println("Размер памяти жесткого диска - " + HDDsize + " ГБ");
-        System.out.println("Системный жесткий диск - " + nameMainHDD);
-
+        System.out.println("\nКоличество ядер процессора - " + cpuCores);
+        System.out.println("Количество логических процессоров - " + cpuLogiсCores);
+        System.out.println("Скорость процессора - " + cpuSpeed + " ГГц");
+        System.out.println("Размер оперативной памяти - " + ramSize + " ГБ");
+        System.out.println("Размер памяти видеокарты - " + gpuSize + " ГБ");
+        System.out.println("Размер памяти жесткого диска - " + hddSize + " ГБ");
+        System.out.println("Системный жесткий диск - " + nameMainHdd);
+        System.out.println("Компьютер включен? " + isPcOn);
 
         System.out.println("\n2.Расчет стоимости товара со скидкой");
 
@@ -75,32 +74,32 @@ public class VariablesTheme {
         не смешивайте вывод разных типов
         */
 
-        byte numByte = 127;
-        short numShort = 32767;
-        int numInt = 2147483647;
-        long numLong = 9223372036854775807L;
+        byte numMaxByte = 127;
+        short numMaxShort = 32767;
+        int numMaxInt = 2147483647;
+        long numMaxLong = 9223372036854775807L;
 
-        System.out.println("\nПервоначальное значение переменной типа byte: " + numByte);
-        System.out.println("Значение после инкремента: " + ++numByte);
-        numByte--;
-        System.out.println("Значение после декремента: " + --numByte);
+        System.out.println("\nПервоначальное значение переменной типа byte: " + numMaxByte);
+        System.out.println("Значение после инкремента: " + ++numMaxByte);
+        numMaxByte--;
+        System.out.println("Значение после декремента: " + --numMaxByte);
 
         // Выглядит странно
 
-        System.out.println("\nПервоначальное значение переменной типа short: " + numShort);
-        System.out.println("Значение после инкремента: " + ++numShort);
-        numShort--;
-        System.out.println("Значение после декремента: " + --numShort);
+        System.out.println("\nПервоначальное значение переменной типа short: " + numMaxShort);
+        System.out.println("Значение после инкремента: " + ++numMaxShort);
+        numMaxShort--;
+        System.out.println("Значение после декремента: " + --numMaxShort);
 
-        System.out.println("\nПервоначальное значение переменной типа int: " + numInt);
-        System.out.println("Значение после инкремента: " + ++numInt);
-        numInt--;
-        System.out.println("Значение после декремента: " + --numInt);
+        System.out.println("\nПервоначальное значение переменной типа int: " + numMaxInt);
+        System.out.println("Значение после инкремента: " + ++numMaxInt);
+        numMaxInt--;
+        System.out.println("Значение после декремента: " + --numMaxInt);
 
-        System.out.println("\nПервоначальное значение переменной типа Long: " + numLong);
-        System.out.println("Значение после инкремента: " + ++numLong);
-        numLong--;
-        System.out.println("Значение после декремента: " + --numLong);
+        System.out.println("\nПервоначальное значение переменной типа Long: " + numMaxLong);
+        System.out.println("Значение после инкремента: " + ++numMaxLong);
+        numMaxLong--;
+        System.out.println("Значение после декремента: " + --numMaxLong);
 
         System.out.println("\n5.Перестановка значений переменных");
 
