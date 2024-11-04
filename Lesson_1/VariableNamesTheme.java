@@ -116,12 +116,11 @@ public class VariableNamesTheme {
         int countNumbersPerRow = 51;
         System.out.println("\nКоличество чисел в каждой строке " + countNumbersPerRow);
 
-
         System.out.println("\n2.Boolean-переменные");
 
         //Сотни равны? 
-        boolean isHundredsEqual = true;
-        System.out.println("\nСотни равны - " + isHundredsEqual);
+        boolean isEqualHundreds = true;
+        System.out.println("\nСотни равны - " + isEqualHundreds);
 
         // Компьютер включен? 
         boolean isPcOn = true;
@@ -136,8 +135,8 @@ public class VariableNamesTheme {
         System.out.println("\nФайл создан - " + isCreatedFile);
 
         // Пустое?
-        boolean isEmptySpace = true;
-        System.out.println("\nПространство пустое - " + isEmptySpace);
+        boolean isEmpty = true;
+        System.out.println("\nПространство пустое - " + isEmpty);
 
         // Активное? 
         boolean isActiveCell = true;
@@ -155,12 +154,11 @@ public class VariableNamesTheme {
         boolean hasUniqueStrings = true;
         System.out.println("\nИмеются уникальные строки - " + hasUniqueStrings);
 
-
         System.out.println("\n3.Аббревиатуры");
 
         // Старый universally unique identifier
-        String uuidOld = "123e4567-e89b-12d3-a456-426655440000";
-        System.out.println("\nСтарый UUID = " + uuidOld);
+        String oldUuid = "123e4567-e89b-12d3-a456-426655440000";
+        System.out.println("\nСтарый UUID = " + oldUuid);
 
         // Производитель оперативной памяти
         String ramMaker = "Samsung";
@@ -175,12 +173,12 @@ public class VariableNamesTheme {
         System.out.println("\nПротокол передачи гипертекста - " + httpType);
 
         // Сокращенный uniform resource locator
-        String urlShot = "https://javaops.ru";
-        System.out.println("\nСокращенный URL - " + urlShot);
+        String shotUrl = "https://javaops.ru";
+        System.out.println("\nСокращенный URL - " + shotUrl);
 
         // Новый идентификатор клиента
-        int newClientId = 11224;
-        System.out.println("\nНовый идентификатор клиента - " + newClientId);
+        int newCid = 11224;
+        System.out.println("\nНовый идентификатор клиента - " + newCid);
 
         // American standard code for information interchange
         int ascii = 128;

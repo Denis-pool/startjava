@@ -5,31 +5,28 @@ public class IfElseStatementTheme {
 
         boolean genderMale = true;
         boolean genderFemale = false;
-        int age = 24;
-        double height = 1.9;
-        String name = "Michael";
-
-
         if (!genderMale) {
             System.out.println("Вы девушка");
         } else {
             System.out.println("Вы мужчина");
         }
 
+        int age = 24;
         if (age > 18) {
             System.out.println("Вы совершеннолетний ");
         } else {
             System.out.println("Вы не совершеннолетний");
         }
 
+        double height = 1.9;
         if (height < 1.8) {
             System.out.println("Ваш рост меньше 180 см");
         } else {
             System.out.println("Ваш рост больше 180 см");
         }
 
+        String name = "Michael";
         char firstLitterName = name.charAt(0);
-
         if (firstLitterName == 'M') {
             System.out.println("Первая буква вашего имени - M");
         } else if (firstLitterName == 'I') {
@@ -40,15 +37,15 @@ public class IfElseStatementTheme {
 
         System.out.println("\n2.Поиск большего числа\n");
 
-        int num21 = 18;
-        var num22 = 18;
+        int numFirst = 18;
+        var numSecond = 18;
 
-        if (num21 == num22) {
-            System.out.println("Оба числа равны " + num21 );
-        } else if (num21 > num22) {
-            System.out.println("Число " + num21 + " больше числа " + num22);
+        if (numFirst == numSecond) {
+            System.out.println("Оба числа равны " + numFirst );
+        } else if (numFirst > numSecond) {
+            System.out.println("Число " + numFirst + " больше числа " + numSecond);
         } else {
-            System.out.println("Число " + num22 + " больше числа " + num21);
+            System.out.println("Число " + numSecond + " больше числа " + numFirst);
             }
 
         System.out.println("\n3.Проверка числа\n");
@@ -106,22 +103,28 @@ public class IfElseStatementTheme {
                                     System.out.println("Все три цифры одинаковые " + first1 + ", " + second1 + " и " + third1);
                                 }
 
-        // Сделал верхнюю задачу ооочень коряво и сложно. По другому не придумал как сделать. 
 
         System.out.println("\n5.Определение символа по его коду");
         // сложно 
 
         System.out.println("\n6.Подсчет начисленных банком %");
         var deposit = 321123.59;
-        // Не полное условие задачи
+        double profit; 
+        if (deposit < 100000) {
+            profit = deposit * 1.05;
+        } else if (deposit > 100000 && deposit < 300000) {
+            profit = deposit * 1.07;
+        } else profit = deposit * 0.1;
+        double total = deposit + profit; 
+        System.out.println("\nСумма вклада: " + deposit + " руб");
+        System.out.println("\nСумма начисленных процентов: " + profit + " руб");
+        System.out.println("\nИтоговая сумма с процентами: " + total + " руб");
 
         System.out.println("\n7.Определение оценки по предметам");
         var historyPercent = 59;
         var progrPercent = 92;
         var averagePercent = (double)(progrPercent + historyPercent)/2;
-        int scoreHistory;
-        int scoreProgr;
-        double averageScore;
+        int scoreHistory, scoreProgr;
         if (historyPercent > 91) {
             System.out.println("История - 5");
             scoreHistory = 5;
@@ -148,18 +151,19 @@ public class IfElseStatementTheme {
                                 System.out.println("Программирование - 2");
                                 scoreProgr = 2;
                             }
+        double averageScore;
         averageScore = (double)(scoreProgr + scoreHistory) / 2;
         System.out.println("Средний бал - " + averageScore);
         System.out.println("Средний % по предметам " + averagePercent);
 
-        /* Если бы средний бал считался относительно среднего процента, то можно было бы реализовать так: 
-        if (averagePercent > 91) {
-            System.out.println("Средний бал - 5");
-            } else if (averagePercent <= 91 && averagePercent > 73) {
-                    System.out.println("Средний бал - 4");
-                    } else if (averagePercent <= 73 && averagePercent > 60) {
-                            System.out.println("Средний бал - 3");
-                            } else System.out.println("Средний бал - 2"); */
+        // Если бы средний бал считался относительно среднего процента, то можно было бы реализовать так: 
+        // if (averagePercent > 91) {
+        //     System.out.println("Средний бал - 5");
+        //     } else if (averagePercent <= 91 && averagePercent > 73) {
+        //             System.out.println("Средний бал - 4");
+        //             } else if (averagePercent <= 73 && averagePercent > 60) {
+        //                     System.out.println("Средний бал - 3");
+        //                     } else System.out.println("Средний бал - 2");
 
         System.out.println("\n8.Расчет годовой прибыли");
         var monthSale = 13025.233;
