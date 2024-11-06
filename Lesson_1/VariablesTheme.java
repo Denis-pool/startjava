@@ -1,3 +1,5 @@
+import java.math.*;
+
 public class VariablesTheme {
 
     public static void main(String[] args) {
@@ -23,24 +25,19 @@ public class VariablesTheme {
 
         System.out.println("\n2.Расчет стоимости товара со скидкой");
 
-        double penCost = 105.5;
-        double bookCost = 235.83;
-        double disсount = 0.11;
+        BigDecimal penCost = new BigDecimal("105.5");
+        BigDecimal bookCost = new BigDecimal("235.83");
+        BigDecimal disсount = new BigDecimal("0.11");
 
-        double baseCost = penCost + bookCost;
-        double discountAmount = baseCost * (1 - disсount);
-        double discountCost = baseCost - discountAmount;
-
-        double roundedBaseCost = Math.round(baseCost * 100.0) / 100.0;
-        double roundedDiscountAmount = Math.round(discountAmount * 100.0) / 100.0;
+        BigDecimal baseCost = penCost.add(bookCost);
+        BigDecimal discountAmount = baseCost.multiply(BigDecimal.valueOf(1).subtract(disсount));
+        BigDecimal discountCost = baseCost.subtract(discountAmount);
 
         System.out.println("\nСтоимость ручки - " + penCost + " руб");
         System.out.println("Стоимость книги - " + bookCost + " руб");
-        System.out.println("Стоимость товаров без скидки - " + roundedBaseCost + " руб");
-        System.out.println("Стоимость товаров со скидкой - " + roundedDiscountAmount + " руб");
+        System.out.println("Стоимость товаров без скидки - " + baseCost + " руб");
+        System.out.println("Стоимость товаров со скидкой - " + discountAmount.setScale(2, RoundingMode.HALF_UP) + " руб");
         System.out.println("Размер скидки - " + String.format("%.2f", discountCost) + " руб");
-
-        // double не используется для работы с деньгами - переделать!!! 
 
         System.out.println("\n3.Вывод слова JAVA");
 
