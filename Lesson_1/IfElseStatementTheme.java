@@ -1,3 +1,5 @@
+import java.math.*;
+
 public class IfElseStatementTheme {
 
     public static void main(String[] args) {
@@ -103,9 +105,20 @@ public class IfElseStatementTheme {
                                     System.out.println("Все три цифры одинаковые " + first1 + ", " + second1 + " и " + third1);
                                 }
 
-
         System.out.println("\n5.Определение символа по его коду");
-        // сложно 
+
+        char  variable = '\u0057';
+        if (Character.isLetter(variable)) {
+            if (Character.toUpperCase(variable) == variable) {
+                System.out.println(variable + " - большая буква");
+            } else {
+                System.out.println(variable + " - маленькая буква");
+                }
+        } else if (Character.isDigit(variable)) {
+            System.out.println(variable + " - цифра");
+                } else {
+                    System.out.println(variable + " - ни буква и ни цифра");
+        }
 
         System.out.println("\n6.Подсчет начисленных банком %");
         var deposit = 321123.59;
@@ -151,8 +164,7 @@ public class IfElseStatementTheme {
                                 System.out.println("Программирование - 2");
                                 scoreProgr = 2;
                             }
-        double averageScore;
-        averageScore = (double)(scoreProgr + scoreHistory) / 2;
+        double averageScore = (double)(scoreProgr + scoreHistory) / 2;
         System.out.println("Средний бал - " + averageScore);
         System.out.println("Средний % по предметам " + averagePercent);
 

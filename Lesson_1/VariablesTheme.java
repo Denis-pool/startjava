@@ -1,7 +1,7 @@
-import java.math.*;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class VariablesTheme {
-
     public static void main(String[] args) {
         System.out.println("\n1.Вывод характеристик компьютера");
 
@@ -36,8 +36,10 @@ public class VariablesTheme {
         System.out.println("\nСтоимость ручки - " + penCost + " руб");
         System.out.println("Стоимость книги - " + bookCost + " руб");
         System.out.println("Стоимость товаров без скидки - " + baseCost + " руб");
-        System.out.println("Стоимость товаров со скидкой - " + discountAmount.setScale(2, RoundingMode.HALF_UP) + " руб");
-        System.out.println("Размер скидки - " + String.format("%.2f", discountCost) + " руб");
+        System.out.println("Стоимость товаров со скидкой - " + 
+                discountAmount.setScale(2, RoundingMode.HALF_UP) + " руб");
+        System.out.println("Размер скидки - " + 
+                discountCost.setScale(2, RoundingMode.HALF_UP) + " руб");
 
         System.out.println("\n3.Вывод слова JAVA");
 
@@ -70,33 +72,33 @@ public class VariablesTheme {
 
         char numMaxChar = 65535;
         System.out.println("\nПервоначальное значение переменной типа Char: " + numMaxChar);
-        System.out.println("Значение после инкремента: " + ++numMaxChar);
-        System.out.println("Значение после декремента: " + --numMaxChar);
+        System.out.println("Значение после инкремента: " + (int) ++numMaxChar);
+        System.out.println("Значение после декремента: " + (int) --numMaxChar);
 
         System.out.println("\n5.Перестановка значений переменных");
 
-        int firstVar = 2;
-        int secondVar = 5;
+        int a = 2;
+        int b = 5;
 
-        System.out.println("\nИсходные значения переменных: \nA = " + firstVar + "\nB = " + secondVar);
+        System.out.println("\nИсходные значения переменных: \nA = " + a + "\nB = " + b);
 
         System.out.println("\nПерестановка переменных с помощью третьей переменной:");
-        int helpingVar = firstVar;
-        firstVar = secondVar;
-        secondVar = helpingVar;
-        System.out.println("A = " + firstVar + "\nB = " + secondVar);
+        int swap = a;
+        a = b;
+        b = swap;
+        System.out.println("A = " + a + "\nB = " + b);
 
         System.out.println("\nПерестановка переменных с помощью арифметических операций:");
-        firstVar += secondVar;
-        secondVar = firstVar - secondVar;
-        firstVar -= secondVar;
-        System.out.println("A = " + firstVar + "\nB = " + secondVar);
+        a += b;
+        b = a - b;
+        a -= b;
+        System.out.println("A = " + a + "\nB = " + b);
 
         System.out.println("\nПерестановка переменных с помощью побитовой операции ^:");
-        firstVar ^= secondVar;
-        secondVar ^= firstVar;
-        firstVar ^= secondVar;
-        System.out.println("A = " + firstVar + "\nB = " + secondVar);
+        a ^= b;
+        b ^= a;
+        a ^= b;
+        System.out.println("A = " + a + "\nB = " + b);
 
         System.out.println("\n6.Вывод символов и их кодов \n");
 
@@ -114,40 +116,42 @@ public class VariablesTheme {
 
         System.out.println("\n7.Вывод в консоль ASCII-арт Дюка \n");
 
-        char forwardSlash = '/';
-        char backSlash = '\\';
+        char slash = '/';
+        char backslash = '\\';
         char underscore = '_';
         char leftParenthesis = '(';
         char rightParenthesis = ')';
 
-        System.out.println("    " + forwardSlash + backSlash);
-        System.out.println("   " + forwardSlash + "  " + backSlash);
-        System.out.println("  "+ forwardSlash + underscore + leftParenthesis + " " + rightParenthesis + backSlash);
-        System.out.println(" " + forwardSlash + "      " + backSlash);
-        System.out.println("" + forwardSlash + underscore + underscore + underscore + underscore + forwardSlash + backSlash + underscore + underscore + backSlash);
+        System.out.println("    " + slash + backslash);
+        System.out.println("   " + slash + "  " + backslash);
+        System.out.println("  " + slash + underscore + leftParenthesis + " " + rightParenthesis + 
+                backslash);
+        System.out.println(" " + slash + "      " + backslash);
+        System.out.println(slash + underscore + underscore + underscore + underscore + slash + 
+                backslash + underscore + underscore + backslash);
 
         System.out.println("\n8.Манипуляции с сотнями, десятками и единицами числа");
 
         int workNum = 123;
 
-        int units = workNum % 10;
-        int tens = (workNum / 10 ) % 10;
-        int hundreds = workNum /100;
+        int ones = workNum % 10;
+        int tens = (workNum / 10) % 10;
+        int hundreds = workNum / 100;
 
-        int sum = units + tens + hundreds;
-        int multpl = units * tens * hundreds;
+        int sum = ones + tens + hundreds;
+        int multiplication = ones * tens * hundreds;
 
-        System.out.println("\nЧисло " + workNum + " содержит: " + "\n  сотен - " + hundreds 
-                            + "\n  десятков - " + tens + "\n  единиц - " + units);
+        System.out.println("\nЧисло " + workNum + " содержит: " + "\n  сотен - " + hundreds + 
+                "\n  десятков - " + tens + "\n  единиц - " + ones);
         System.out.println("Сумма разрядов = " + sum);
-        System.out.println("Произведение разрядов = " + multpl);
+        System.out.println("Произведение разрядов = " + multiplication);
 
         System.out.println("\n9.Перевод секунд в часы, минуты и секунды");
 
         int totalSs = 86399;
         int ss = totalSs % 60;
-        int mm = (totalSs /60) % 60;
-        int hh = totalSs /3600;
+        int mm = (totalSs / 60) % 60;
+        int hh = totalSs / 3600;
 
         System.out.println("Исходное количество - " + totalSs + " сек.");
         System.out.println(hh + ":" + mm + ":" + ss);
