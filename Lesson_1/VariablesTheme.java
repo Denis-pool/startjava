@@ -7,7 +7,7 @@ public class VariablesTheme {
 
         byte cpuCores = 8;
         boolean isPcOn = true;
-        short cpuLogiсCores = 16;
+        short cpuLogicCores = 16;
         int hddSize = 1024;
         long gpuSize = 8L;
         float cpuSpeed = 3.20F;
@@ -15,7 +15,7 @@ public class VariablesTheme {
         char nameMainHdd = 'C';
 
         System.out.println("\nКоличество ядер процессора - " + cpuCores);
-        System.out.println("Количество логических процессоров - " + cpuLogiсCores);
+        System.out.println("Количество логических процессоров - " + cpuLogicCores);
         System.out.println("Скорость процессора - " + cpuSpeed + " ГГц");
         System.out.println("Размер оперативной памяти - " + ramSize + " ГБ");
         System.out.println("Размер памяти видеокарты - " + gpuSize + " ГБ");
@@ -27,10 +27,10 @@ public class VariablesTheme {
 
         BigDecimal penCost = new BigDecimal("105.5");
         BigDecimal bookCost = new BigDecimal("235.83");
-        BigDecimal disсount = new BigDecimal("0.11");
+        BigDecimal discount = new BigDecimal("0.11");
 
         BigDecimal baseCost = penCost.add(bookCost);
-        BigDecimal discountAmount = baseCost.multiply(BigDecimal.valueOf(1).subtract(disсount));
+        BigDecimal discountAmount = baseCost.multiply(BigDecimal.valueOf(1).subtract(discount));
         BigDecimal discountCost = baseCost.subtract(discountAmount);
 
         System.out.println("\nСтоимость ручки - " + penCost + " руб");
@@ -124,8 +124,8 @@ public class VariablesTheme {
 
         System.out.println("    " + slash + backslash);
         System.out.println("   " + slash + "  " + backslash);
-        System.out.println("  " + slash + underscore + leftParenthesis + " " + rightParenthesis + 
-                backslash);
+        System.out.println("  " + slash + underscore + leftParenthesis + " " + 
+                rightParenthesis + backslash);
         System.out.println(" " + slash + "      " + backslash);
         System.out.println(slash + underscore + underscore + underscore + underscore + slash + 
                 backslash + underscore + underscore + backslash);

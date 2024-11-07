@@ -1,5 +1,4 @@
 public class VariableNamesTheme {
-
     public static void main(String[] args) {
         System.out.println("\n1.Разные переменные");
 
@@ -26,7 +25,7 @@ public class VariableNamesTheme {
 
         // Вес собаки
         int weightDog = 35;
-        System.out.println("\nВес собаки - "+ weightDog);
+        System.out.println("\nВес собаки - " + weightDog);
 
         // Исходное число
         int originalNum = 52;
@@ -118,7 +117,7 @@ public class VariableNamesTheme {
 
         System.out.println("\n2.Boolean-переменные");
 
-        //Сотни равны? 
+        // Сотни равны?
         boolean isEqualHundreds = true;
         System.out.println("\nСотни равны - " + isEqualHundreds);
 

@@ -1,8 +1,14 @@
+import java.math.BigDecimal;
+
 public class Main {
 
     public static void main (String[] args) {
 
         // Просуммировать числа от 1 до 5
+
+        int test = 74;
+        BigDecimal test2 = new BigDecimal(test);
+        System.out.println(test2);
 
       // //  int sum = 1 + 2;
       // //  int sum1 = sum + 3;
@@ -15,17 +21,17 @@ public class Main {
       //   System.out.println("работает везде!");
 
 
-        char  variable = '\u0057';
-        if (Character.isLetter(variable)) {
-            if (Character.toUpperCase(variable) == variable) {
-                System.out.println(variable + " - большая буква");
-            } else {
-                System.out.println(variable + " - маленькая буква");
-                }
-        } else if (Character.isDigit(variable)) {
-            System.out.println(variable + " - цифра");
-                } else {
-                    System.out.println(variable + " - ни буква и ни цифра");
-        }
+        // char  variable = '\u0057';
+        // if (Character.isLetter(variable)) {
+        //     if (Character.toUpperCase(variable) == variable) {
+        //         System.out.println(variable + " - большая буква");
+        //     } else {
+        //         System.out.println(variable + " - маленькая буква");
+        //         }
+        // } else if (Character.isDigit(variable)) {
+        //     System.out.println(variable + " - цифра");
+        //         } else {
+        //             System.out.println(variable + " - ни буква и ни цифра");
+        
     }
 }
