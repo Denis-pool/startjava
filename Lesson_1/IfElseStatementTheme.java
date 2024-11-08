@@ -38,15 +38,15 @@ public class IfElseStatementTheme {
 
         System.out.println("\n2.Поиск большего числа\n");
 
-        int numFirst = 18;
-        int numSecond = 18;
+        int num1 = 182;
+        int num2 = 187;
 
-        if (numFirst == numSecond) {
-            System.out.println("Оба числа равны " + numFirst);
-        } else if (numFirst > numSecond) {
-            System.out.println("Число " + numFirst + " больше числа " + numSecond);
+        if (num1 == num2) {
+            System.out.println("Оба числа равны " + num1);
+        } else if (num1 > num2) {
+            System.out.println("Число " + num1 + " больше числа " + num2);
         } else {
-            System.out.println("Число " + numSecond + " больше числа " + numFirst);
+            System.out.println("Число " + num2 + " больше числа " + num1);
         }
 
         System.out.println("\n3.Проверка числа\n");
@@ -66,8 +66,6 @@ public class IfElseStatementTheme {
 
         System.out.println("\n4.Поиск одинаковых цифр в числах\n");
 
-        int num1 = 123;
-        int num2 = 123;
         int hundredsNum1 = num1 / 100;
         int hundredsNum2 = num2 / 100;
         int onesNum1 = num1 % 10;
